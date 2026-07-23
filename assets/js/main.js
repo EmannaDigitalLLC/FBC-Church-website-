@@ -108,6 +108,58 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
 
+  // Newsletter archive (reads assets/js/newsletters-data.js)
+  const currentWrap = document.querySelector('[data-newsletter-current]');
+  const pastWrap = document.querySelector('[data-newsletter-past]');
+  if (currentWrap && typeof NEWSLETTER_MONTHS !== 'undefined') {
+    const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'];
+
+    const entries = NEWSLETTER_MONTHS
+      .map(raw => String(raw).trim())
+      .filter(raw => /^\d{4}-\d{2}$/.test(raw))
+      .map(raw => {
+        const [year, month] = raw.split('-').map(Number);
+        return { key: raw, year, month, file: `newsletters/${raw}.pdf`,
+          label: `${MONTH_NAMES[month - 1]} ${year}` };
+      })
+      // de-duplicate in case the same month was accidentally listed twice
+      .filter((entry, i, arr) => arr.findIndex(e => e.key === entry.key) === i)
+      .sort((a, b) => (b.year - a.year) || (b.month - a.month));
+
+    if (entries.length) {
+      const [current, ...past] = entries;
+
+      currentWrap.innerHTML = `
+        <h2 class="mt-2">${current.label} Newsletter</h2>
+        <div class="hero-actions mt-3" style="justify-content:center;">
+          <a href="${current.file}" target="_blank" rel="noopener" class="btn btn-primary">Open Full Newsletter</a>
+        </div>
+        <div class="newsletter-embed mt-4">
+          <iframe src="${current.file}" title="${current.label} Newsletter"></iframe>
+        </div>
+      `;
+
+      if (pastWrap) {
+        if (past.length) {
+          pastWrap.innerHTML = past.map(entry => `
+            <a href="${entry.file}" target="_blank" rel="noopener" class="newsletter-row">
+              <span class="newsletter-row-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3H14L19 8V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V5C5 3.9 5.9 3 7 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 3V8H19" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+              <span class="newsletter-row-label">${entry.label}</span>
+              <span class="newsletter-row-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+          `).join('');
+          pastWrap.closest('[data-newsletter-past-section]')?.removeAttribute('hidden');
+        }
+      }
+    } else {
+      currentWrap.innerHTML = `
+        <h2 class="mt-2">New newsletters are coming soon</h2>
+        <p class="lede mt-3">Check back each month for the latest newsletter from our church family.</p>
+      `;
+    }
+  }
+
   // Contact / prayer form (no backend — friendly confirmation only)
   const form = document.querySelector('[data-form]');
   if (form) {

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Watch Online | First Baptist Church of Rancho Cordova</title>
-<meta name="description" content="Can't join us in person? Stream First Baptist Church of Rancho Cordova's Sunday service live or watch on-demand.">
+<title>Newsletter | First Baptist Church of Rancho Cordova</title>
+<meta name="description" content="Read First Baptist Church of Rancho Cordova's monthly newsletter, plus browse past issues.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -39,8 +39,8 @@
           </div>
         </li>
         <li><a href="visit.html">Visit</a></li>
-        <li><a href="watch.html" class="active">Watch</a></li>
-        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="watch.html">Watch</a></li>
+        <li><a href="newsletter.html" class="active">Newsletter</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-cta">
@@ -88,89 +88,49 @@
 
 <main id="main">
 
-  <section class="page-hero">
+  <section class="page-hero" style="min-height: 46vh;">
     <div class="hero-media">
-      <img src="assets/img/photos/worship-band.jpg" alt="Worship band leading music during a service">
+      <img src="assets/img/photos/congregation-worship.jpg" alt="Congregation gathered in worship with hands raised">
     </div>
     <div class="container hero-content">
-      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Watch</span></div>
-      <span class="eyebrow">Watch Online</span>
-      <h1>Worship with us<br>from anywhere.</h1>
-      <p class="hero-sub">Can't join us in person? You're still part of the family. Stream our Sunday service live, or catch up on-demand whenever it fits your schedule.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Newsletter</span></div>
+      <span class="eyebrow">Stay Connected</span>
+      <h1>Church Newsletter</h1>
     </div>
   </section>
 
-  <!-- LIVE PLAYER -->
+  <!-- CURRENT NEWSLETTER -->
   <section class="section">
-    <div class="container" style="max-width: 960px;">
-      <div class="section-head center">
-        <span class="eyebrow" style="justify-content:center;">Sunday Service</span>
-        <h2>Live &amp; on-demand &mdash; 10:00 AM Sundays</h2>
-      </div>
-      <div class="reveal" style="position:relative; border-radius: var(--radius-lg); overflow:hidden; box-shadow: var(--shadow-soft); aspect-ratio:16/9; background: var(--color-green);">
-        <img src="assets/img/photos/worship-band.jpg" alt="Worship band leading music" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.55;">
-        <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap: var(--space-3); color:#fff; text-align:center; padding: var(--space-3);">
-          <span style="width:76px; height:76px; border-radius:50%; background:rgba(255,255,255,0.16); backdrop-filter: blur(4px); border:1.5px solid rgba(255,255,255,0.5); display:flex; align-items:center; justify-content:center;">
-            <svg viewBox="0 0 24 24" fill="none" style="width:28px; height:28px; margin-left:3px;"><path d="M7 4L20 12L7 20V4Z" fill="#fff"/></svg>
-          </span>
-          <p style="font-weight:600;">Livestream embed goes here</p>
-          <p class="body-sm" style="color:rgba(255,255,255,0.75); max-width:420px;">Connect your YouTube Live, Facebook Live, or church streaming platform embed code in this player.</p>
-        </div>
-      </div>
-      <div class="hero-actions mt-4" style="justify-content:center;">
-        <a href="give.html" class="btn btn-primary">Give Online</a>
-        <a href="visit.html" class="btn btn-ghost">Plan an In-Person Visit</a>
+    <div class="container text-center" style="max-width: 900px;">
+      <span class="eyebrow" style="justify-content:center;">This Month</span>
+      <div data-newsletter-current>
+        <h2 class="mt-2">Loading newsletter&hellip;</h2>
       </div>
     </div>
   </section>
 
-  <!-- PAST MESSAGES -->
-  <section class="section bg-alt">
+  <!-- PAST NEWSLETTERS -->
+  <section class="section bg-alt" data-newsletter-past-section hidden>
     <div class="container">
       <div class="section-head center">
-        <span class="eyebrow" style="justify-content:center;">Catch Up</span>
-        <h2>Recent messages</h2>
-        <p class="lede">Missed a Sunday, or want to revisit a message? Recent recordings will appear here once your streaming platform is connected.</p>
+        <span class="eyebrow" style="justify-content:center;">Archive</span>
+        <h2>Past Newsletters</h2>
+        <p class="lede">Catch up on previous months — each one opens as a PDF in a new tab.</p>
       </div>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <div class="card-media">
-            <img src="assets/img/photos/congregation-worship.jpg" alt="Congregation gathered in worship">
-          </div>
-          <div class="card-body">
-            <span class="tag">Sunday Message</span>
-            <h3 style="font-size:1.1rem;">This Week's Message</h3>
-            <div class="meta">
-              <svg viewBox="0 0 24 24" fill="none" style="width:14px;height:14px;"><path d="M7 4L18 12L7 20V4Z" fill="currentColor"/></svg>
-              Watch replay
-            </div>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-media">
-            <img src="assets/img/photos/congregation-clapping.jpg" alt="Congregation clapping in worship">
-          </div>
-          <div class="card-body">
-            <span class="tag">Sunday Message</span>
-            <h3 style="font-size:1.1rem;">Last Sunday's Message</h3>
-            <div class="meta">
-              <svg viewBox="0 0 24 24" fill="none" style="width:14px;height:14px;"><path d="M7 4L18 12L7 20V4Z" fill="currentColor"/></svg>
-              Watch replay
-            </div>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-media">
-            <img src="assets/img/photos/worship-hands-raised.jpg" alt="Congregation with hands raised in worship">
-          </div>
-          <div class="card-body">
-            <span class="tag">Sunday Message</span>
-            <h3 style="font-size:1.1rem;">Two Weeks Ago</h3>
-            <div class="meta">
-              <svg viewBox="0 0 24 24" fill="none" style="width:14px;height:14px;"><path d="M7 4L18 12L7 20V4Z" fill="currentColor"/></svg>
-              Watch replay
-            </div>
-          </div>
+      <div class="newsletter-list" data-newsletter-past></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <img src="assets/img/photos/church-exterior.jpg" alt="Church exterior with cross reaching into blue sky">
+        <span class="eyebrow on-dark" style="justify-content:center;">Questions?</span>
+        <h2 class="mt-2">Want to be added to our mailing list?</h2>
+        <p>Reach out and we'll make sure you never miss an update.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
         </div>
       </div>
     </div>
@@ -197,7 +157,6 @@
         <ul>
           <li><a href="about.html">About Us</a></li>
           <li><a href="programs.html">Programs</a></li>
-
           <li><a href="visit.html">Plan a Visit</a></li>
           <li><a href="watch.html">Watch Online</a></li>
           <li><a href="newsletter.html">Newsletter</a></li>
@@ -222,11 +181,15 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 First Baptist Church of Rancho Cordova. All rights reserved.</span>
-      <a href="https://emannadigital.com" target="_blank" rel="noopener" class="footer-credit-bubble"><img src="assets/img/emanna-icon.png" alt="Emanna Digital"><span>Designed by <strong>Emanna Digital</strong></span></a>
+      <a href="https://emannadigital.com" target="_blank" rel="noopener" class="footer-credit-bubble">
+        <img src="assets/img/emanna-icon.png" alt="Emanna Digital">
+        <span>Designed by <strong>Emanna Digital</strong></span>
+      </a>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=3?v=2"></script>
+<script src="assets/js/newsletters-data.js"></script>
+<script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
