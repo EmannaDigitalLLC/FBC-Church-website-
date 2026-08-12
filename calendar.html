@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Give | First Baptist Church of Rancho Cordova</title>
-<meta name="description" content="Partner with what God is doing at First Baptist Church of Rancho Cordova. Give online, by mail, or in person.">
+<title>Calendar | First Baptist Church of Rancho Cordova</title>
+<meta name="description" content="See what's happening at First Baptist Church of Rancho Cordova — browse upcoming services, events, and ministry gatherings.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -41,7 +41,7 @@
         <li><a href="visit.html">Visit</a></li>
         <li><a href="watch.html">Watch</a></li>
         <li><a href="newsletter.html">Newsletter</a></li>
-        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="calendar.html" class="active">Calendar</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-cta">
@@ -90,80 +90,39 @@
 
 <main id="main">
 
-  <section class="page-hero">
+  <section class="page-hero" style="min-height: 40vh;">
     <div class="hero-media">
-      <img src="assets/img/photos/prayer-hands.jpg" alt="Hands folded together in prayer">
+      <img src="assets/img/photos/congregation-worship.jpg" alt="Congregation gathered in worship with hands raised">
     </div>
     <div class="container hero-content">
-      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Give</span></div>
-      <span class="eyebrow">Give</span>
-      <h1>Partner with what<br>God is doing here.</h1>
-      <p class="hero-sub">Your generosity supports our ministries, missions, and the everyday life of this church family. Thank you for sowing into the work God is doing in Rancho Cordova and beyond.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Calendar</span></div>
+      <span class="eyebrow">Stay Connected</span>
+      <h1>Church Calendar</h1>
+      <p class="hero-sub">See what's coming up — services, Bible studies, ministry gatherings, and special events.</p>
     </div>
   </section>
 
-  <!-- WAYS TO GIVE -->
+  <!-- CALENDAR EMBED -->
   <section class="section">
     <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow" style="justify-content:center;">Ways to Give</span>
-        <h2>Give a one-time gift or set up recurring giving</h2>
-        <p class="lede">Choose whichever way is easiest for you — safe, secure, and simple to manage.</p>
-      </div>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <div class="card-body" style="padding: var(--space-4);">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 10H21" stroke="currentColor" stroke-width="1.6"/></svg></span>
-            <h3 class="mt-3" style="font-size:1.2rem;">Online</h3>
-            <p>Give a one-time gift or set up recurring giving in just a few minutes.</p>
-            <a href="#online-giving" class="link-arrow mt-3">Give online
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-body" style="padding: var(--space-4);">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 5 14.5 5 9.5C5 5.9 7.9 3 11.5 3H12.5C16.1 3 19 5.9 19 9.5C19 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6"/></svg></span>
-            <h3 class="mt-3" style="font-size:1.2rem;">In Person</h3>
-            <p>Give during our Sunday morning worship gathering at 10:00 AM.</p>
-            <a href="visit.html" class="link-arrow mt-3">Plan a visit
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-body" style="padding: var(--space-4);">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 8L12 13L21 8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-            <h3 class="mt-3" style="font-size:1.2rem;">By Mail</h3>
-            <p>Mail your gift to our church office at 10720 Coloma Rd, Rancho Cordova, CA 95670.</p>
-            <a href="contact.html" class="link-arrow mt-3">Contact us
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
+      <div class="calendar-embed reveal">
+        <script src="https://www.calendarwiz.com/cwlist/cwresponsive.js/?crd=fbcrancho&view=calendar&nolog=1&cid[]=all&calwidth=100%&calheight=1200&mobilepref=mobile"></script>
       </div>
     </div>
   </section>
 
-  <!-- ONLINE GIVING PANEL -->
-  <section class="section bg-alt" id="online-giving">
-    <div class="container" style="max-width: 720px;">
-      <div class="card text-center reveal" style="padding: var(--space-6) var(--space-4);">
-        <span class="eyebrow" style="justify-content:center;">Online Giving</span>
-        <h2 class="mt-2">Give securely online</h2>
-        <p class="lede mt-3">Our online giving portal supports one-time and recurring gifts by card or bank transfer.</p>
-        <div class="hero-actions mt-4" style="justify-content:center;">
-          <a href="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=wWsk24ZWJSTZKsGd1RMKlg0BDvsSG3VIWQCPJNNxD8upkiY7JlDavDsozUE7KG0nFx2NSo8LdUKGuGuF396vbdM7jMH1e3MiOmtf-wWdQUqXHubq5Z7ap5JVmPErc4ZeYHCKCZhESjGNQmZ5B-6dx8d3VJTsQW8sZDNP0I7mZBs=&ver=3" target="_blank" rel="noopener" class="btn btn-primary">Give Online</a>
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <img src="assets/img/photos/church-exterior.jpg" alt="Church exterior with cross reaching into blue sky">
+        <span class="eyebrow on-dark" style="justify-content:center;">Questions?</span>
+        <h2 class="mt-2">Not sure which event is right for you?</h2>
+        <p>Reach out and we'll help you find where to plug in.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- VERSE -->
-  <section class="section-tight bg-dark">
-    <div class="container text-center" style="max-width: 780px;">
-      <p class="verse">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."</p>
-      <cite>2 Corinthians 9:7</cite>
     </div>
   </section>
 
@@ -188,7 +147,6 @@
         <ul>
           <li><a href="about.html">About Us</a></li>
           <li><a href="programs.html">Programs</a></li>
-
           <li><a href="visit.html">Plan a Visit</a></li>
           <li><a href="watch.html">Watch Online</a></li>
           <li><a href="newsletter.html">Newsletter</a></li>
@@ -214,7 +172,10 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 First Baptist Church of Rancho Cordova. All rights reserved.</span>
-      <a href="https://emannadigital.com" target="_blank" rel="noopener" class="footer-credit-bubble"><img src="assets/img/emanna-icon.png" alt="Emanna Digital"><span>Designed by <strong>Emanna Digital</strong></span></a>
+      <a href="https://emannadigital.com" target="_blank" rel="noopener" class="footer-credit-bubble">
+        <img src="assets/img/emanna-icon.png" alt="Emanna Digital">
+        <span>Designed by <strong>Emanna Digital</strong></span>
+      </a>
     </div>
   </div>
 </footer>

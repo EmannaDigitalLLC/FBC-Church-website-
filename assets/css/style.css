@@ -619,6 +619,16 @@ h4{ font-size: 1.15rem; font-weight: 600; }
 .newsletter-row-arrow{ width: 18px; height: 18px; flex-shrink: 0; color: var(--color-ink-faint); transition: transform 200ms var(--ease); }
 .newsletter-row:hover .newsletter-row-arrow{ transform: translateX(3px); color: var(--color-gold-dark); }
 
+/* ---------- Calendar ---------- */
+.calendar-embed{
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  background: var(--color-surface);
+  padding: var(--space-4);
+}
+
 /* ---------- Utilities ---------- */
 .text-center{ text-align: center; }
 .mt-1{ margin-top: var(--space-1); } .mt-2{ margin-top: var(--space-2); } .mt-3{ margin-top: var(--space-3); }
