@@ -1,0 +1,6 @@
+name = "fbc-rancho-chat"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+[vars]
+ALLOWED_ORIGINS = "https://emannadigitalllc.github.io,http://localhost:8420,http://127.0.0.1:8420"
