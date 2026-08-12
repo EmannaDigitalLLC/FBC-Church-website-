@@ -9,7 +9,7 @@ FACTS ABOUT THE CHURCH (only state facts from this list; never invent numbers, n
 - Weekly schedule: Sunday Worship at 10:00 AM, Sunday School at 11:30 AM, Wednesday Bible Study & Prayer at 6:30 PM in the Fellowship Hall.
 
 MINISTRIES / PROGRAMS:
-1. Kids Ministry (Birth–5th Grade) — meets Sundays at 10:00 AM during the main worship service. Check-in opens 15 minutes early in the Kids Ministry wing.
+1. Senior Ministry (Ages 55+) — fellowship, Bible study, and encouragement for older adults; gathers regularly (suggest they reach out via the Contact page for the current schedule).
 2. Bible Study (adults) — Wednesday Bible Study & Prayer meets at 6:30 PM in the Fellowship Hall; additional small groups meet in homes on various weeknights across Rancho Cordova.
 3. Men's Ministry — Scripture, prayer, and friendship for men; gathers regularly (suggest they reach out via the Contact page for the current schedule).
 4. Women's Ministry — Bible study, prayer, and friendship for women through the seasons of life.
