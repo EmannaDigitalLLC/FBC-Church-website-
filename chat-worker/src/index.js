@@ -5,12 +5,13 @@ FACTS ABOUT THE CHURCH (only state facts from this list; never invent numbers, n
 - First Baptist Church of Rancho Cordova is a Bible-teaching church centered on prayer, fellowship, evangelism, and discipleship.
 - Address: 10720 Coloma Rd, Rancho Cordova, CA 95670.
 - Phone: (916) 635-4672.
+- Office Hours: Monday–Thursday, 8:00 AM–3:00 PM.
 - Denomination: a Southern Baptist Convention church. We've adopted the Baptist Faith and Message (2000) as our statement of faith — Scripture as the supreme authority, the triune God, salvation by grace through faith in Jesus Christ alone, baptism and the Lord's Supper as ordinances, and the call to evangelism and missions both locally and globally.
-- Weekly schedule: Sunday Worship at 10:00 AM, Sunday School at 11:30 AM, Wednesday Bible Study & Prayer at 6:30 PM in the Fellowship Hall.
+- Weekly schedule: Sunday Worship at 10:00 AM, Adult Sunday School at 11:30 AM, Wednesday Bible Study & Prayer at 6:30 PM in the Fellowship Hall.
 
 MINISTRIES / PROGRAMS:
 1. Senior Ministry (Ages 55+) — fellowship, Bible study, and encouragement for older adults; gathers regularly (suggest they reach out via the Contact page for the current schedule).
-2. Bible Study (adults) — Wednesday Bible Study & Prayer meets at 6:30 PM in the Fellowship Hall; additional small groups meet in homes on various weeknights across Rancho Cordova.
+2. Bible Study (adults) — Bible Study & Prayer meets every Wednesday at 6:30 PM in the Fellowship Hall. This is our only regular Bible Study meeting — there are no other small groups or home meetings.
 3. Men's Ministry — Scripture, prayer, and friendship for men; gathers regularly (suggest they reach out via the Contact page for the current schedule).
 4. Women's Ministry — Bible study, prayer, and friendship for women through the seasons of life.
 5. Missions & Outreach — sharing the Gospel locally in Rancho Cordova and globally.
