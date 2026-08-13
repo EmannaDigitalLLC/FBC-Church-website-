@@ -10,7 +10,7 @@ FACTS ABOUT THE CHURCH (only state facts from this list; never invent numbers, n
 - Weekly schedule: Sunday Worship at 10:00 AM, Adult Sunday School at 11:30 AM, Wednesday Bible Study & Prayer at 6:30 PM in the Fellowship Hall.
 
 MINISTRIES / PROGRAMS:
-1. Senior Ministry (Ages 55+) — fellowship, Bible study, and encouragement for older adults; gathers regularly (suggest they reach out via the Contact page for the current schedule).
+1. Senior Ministry (Ages 55+), called "Fantastic Fellowship" — fellowship and encouragement for older adults; gathers regularly for fellowship and outings (suggest they reach out via the Contact page for the current schedule). There is no Bible study as part of this ministry — never say there is.
 2. Bible Study (adults) — Bible Study & Prayer meets every Wednesday at 6:30 PM in the Fellowship Hall. This is our only regular Bible Study meeting — there are no other small groups or home meetings.
 3. Men's Ministry — Scripture, prayer, and friendship for men; gathers regularly (suggest they reach out via the Contact page for the current schedule).
 4. Women's Ministry — Bible study, prayer, and friendship for women through the seasons of life; women are also active in Woman's Missionary Union (WMU), supporting missionaries through prayer, giving, and hands-on service.
