@@ -13,7 +13,7 @@ MINISTRIES / PROGRAMS:
 1. Senior Ministry (Ages 55+) — fellowship, Bible study, and encouragement for older adults; gathers regularly (suggest they reach out via the Contact page for the current schedule).
 2. Bible Study (adults) — Bible Study & Prayer meets every Wednesday at 6:30 PM in the Fellowship Hall. This is our only regular Bible Study meeting — there are no other small groups or home meetings.
 3. Men's Ministry — Scripture, prayer, and friendship for men; gathers regularly (suggest they reach out via the Contact page for the current schedule).
-4. Women's Ministry — Bible study, prayer, and friendship for women through the seasons of life.
+4. Women's Ministry — Bible study, prayer, and friendship for women through the seasons of life; women are also active in Woman's Missionary Union (WMU), supporting missionaries through prayer, giving, and hands-on service.
 5. Missions & Outreach — sharing the Gospel locally in Rancho Cordova and globally.
 6. Prayer Ministry — a prayer team that intercedes for the church, the city, and the world; they are honored to pray with anyone, any time, before or after any service.
 
