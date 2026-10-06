@@ -677,6 +677,18 @@ h4{ font-size: 1.15rem; font-weight: 600; }
   .chat-panel{ width: calc(100vw - 24px); bottom: 70px; }
 }
 
+/* ---------- Colored support cards (Missions page) ---------- */
+.support-card{
+  border-top: 6px solid var(--accent);
+  background: linear-gradient(180deg, var(--tint) 0%, var(--color-cream-card) 60%);
+}
+.support-card.reveal{ transition: opacity 700ms var(--ease), transform 260ms var(--ease), box-shadow 260ms var(--ease); }
+.support-card.is-visible:hover{ transform: translateY(-4px); box-shadow: var(--shadow-soft); }
+.support-card .tag{ color: var(--accent-text, var(--accent)); }
+.support-card .feature-icon{ background: var(--accent); color: #fff; }
+.support-card .feature-icon svg{ stroke: #fff; }
+.support-card h3{ color: var(--ink-dark, var(--color-ink)); }
+
 /* ---------- Utilities ---------- */
 .text-center{ text-align: center; }
 .mt-1{ margin-top: var(--space-1); } .mt-2{ margin-top: var(--space-2); } .mt-3{ margin-top: var(--space-3); }
