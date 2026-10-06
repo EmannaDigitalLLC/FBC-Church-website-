@@ -689,6 +689,34 @@ h4{ font-size: 1.15rem; font-weight: 600; }
 .support-card .feature-icon svg{ stroke: #fff; }
 .support-card h3{ color: var(--ink-dark, var(--color-ink)); }
 
+/* ---------- Deacons (About page): zig-zag rows with slide-in ---------- */
+.deacons-section{ overflow-x: clip; }
+.deacon-list{ display: flex; flex-direction: column; gap: var(--space-6); max-width: 880px; margin-inline: auto; }
+.deacon-row{ display: flex; align-items: center; gap: var(--space-6); }
+.deacon-row:nth-child(even){ flex-direction: row-reverse; }
+.deacon-photo{ flex: 0 0 300px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft); }
+.deacon-photo img{ display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 22%; transition: transform 700ms var(--ease); }
+.deacon-row:hover .deacon-photo img{ transform: scale(1.04); }
+.deacon-info{ flex: 1; }
+.deacon-info::before{ content: ""; display: block; width: 56px; height: 3px; background: var(--color-gold); border-radius: 2px; margin-bottom: var(--space-2); }
+.deacon-info h3{ font-size: clamp(1.7rem, 3.2vw, 2.4rem); }
+.deacon-role{ display: block; margin-top: 0.5rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-gold-dark); }
+.deacon-row:nth-child(even) .deacon-info{ text-align: right; }
+.deacon-row:nth-child(even) .deacon-info::before{ margin-left: auto; }
+/* Slide in from the side each part sits on (photo from its edge, text from the opposite one) */
+.reveal.from-left{ transform: translateX(-70px); }
+.reveal.from-right{ transform: translateX(70px); }
+.reveal.from-left.is-visible, .reveal.from-right.is-visible{ transform: translateX(0); }
+.deacon-info.reveal{ transition-delay: 180ms; }
+@media (max-width: 700px){
+  .deacon-row, .deacon-row:nth-child(even){ flex-direction: column; text-align: center; gap: var(--space-3); }
+  .deacon-photo{ flex-basis: auto; width: min(300px, 80%); }
+  .deacon-row:nth-child(even) .deacon-info{ text-align: center; }
+  .deacon-info::before, .deacon-row:nth-child(even) .deacon-info::before{ margin-inline: auto; }
+  .reveal.from-left, .reveal.from-right{ transform: translateY(24px); }
+  .reveal.from-left.is-visible, .reveal.from-right.is-visible{ transform: translateY(0); }
+}
+
 /* ---------- Utilities ---------- */
 .text-center{ text-align: center; }
 .mt-1{ margin-top: var(--space-1); } .mt-2{ margin-top: var(--space-2); } .mt-3{ margin-top: var(--space-3); }
