@@ -1,0 +1,65 @@
+/* ============================================================
+   Church calendar — phone agenda (see assets/js/calendar-agenda.js)
+   Loaded only on calendar.html
+   ============================================================ */
+.calendar-embed.is-agenda{ padding: var(--space-2); }
+.agenda [hidden]{ display: none !important; }
+
+/* Month navigation */
+.agenda-nav{ display: flex; align-items: center; justify-content: space-between; gap: var(--space-1); margin-bottom: var(--space-2); }
+.agenda-month{ font-size: 1.45rem; text-align: center; flex: 1; }
+.agenda-btn{
+  width: 44px; height: 44px; flex: 0 0 44px; border-radius: 50%;
+  border: 1px solid var(--color-border); background: var(--color-cream-card);
+  color: var(--color-green); font-size: 1.7rem; line-height: 1; padding-bottom: 3px;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 200ms var(--ease), border-color 200ms var(--ease), color 200ms var(--ease);
+}
+.agenda-btn:hover, .agenda-btn:focus-visible{ background: var(--color-gold); border-color: var(--color-gold); color: #fff; }
+.agenda-today-btn{
+  display: block; margin: 0 auto var(--space-2);
+  background: none; border: 0; padding: 0.35rem 0.6rem;
+  font-size: 0.85rem; font-weight: 600; color: var(--color-gold-dark);
+  text-decoration: underline; text-underline-offset: 3px;
+}
+
+/* Days */
+.agenda-day{
+  display: flex; gap: var(--space-2); align-items: flex-start;
+  padding-block: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}
+.agenda-day:first-of-type{ border-top: 0; }
+.agenda-day.is-past{ opacity: 0.6; }
+.agenda-badge{
+  flex: 0 0 58px; text-align: center; padding: 0.55rem 0.2rem 0.5rem;
+  border-radius: var(--radius-md); background: var(--color-bg-alt); color: var(--color-ink);
+}
+.agenda-wd{ display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-gold-dark); }
+.agenda-dn{ display: block; font-family: var(--font-display); font-size: 1.7rem; line-height: 1.1; font-weight: 600; }
+.agenda-today{ display: block; margin-top: 0.15rem; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.agenda-day.is-today .agenda-badge{ background: var(--color-green); color: #fff; }
+.agenda-day.is-today .agenda-wd, .agenda-day.is-today .agenda-today{ color: var(--color-gold-light); }
+
+/* Events */
+.agenda-events{ flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.agenda-event{
+  display: block; padding: 0.6rem 0.8rem 0.65rem; border-radius: var(--radius-md);
+  background: var(--color-cream-card); border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-gold); color: var(--color-ink);
+}
+a.agenda-event:hover, a.agenda-event:focus-visible{ border-color: var(--color-gold); box-shadow: var(--shadow-card); }
+.agenda-time{ display: block; font-size: 0.8rem; font-weight: 700; color: var(--color-gold-dark); }
+.agenda-title{ display: block; margin-top: 0.1rem; font-family: var(--font-display); font-size: 1.08rem; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+.agenda-meta{ display: block; margin-top: 0.2rem; font-size: 0.78rem; color: var(--color-ink-faint); }
+
+/* Toggle, states, footer */
+.agenda-earlier{
+  display: block; width: 100%; margin-bottom: var(--space-1); padding: 0.7rem 1rem;
+  border-radius: 999px; border: 1px dashed var(--color-border-dark, var(--color-border));
+  background: transparent; color: var(--color-ink-soft); font-size: 0.88rem; font-weight: 600;
+}
+.agenda-earlier:hover, .agenda-earlier:focus-visible{ border-color: var(--color-gold); color: var(--color-gold-dark); }
+.agenda-loading, .agenda-empty, .agenda-note{ text-align: center; color: var(--color-ink-soft); padding: var(--space-3) var(--space-1); }
+.agenda-foot{ margin-top: var(--space-3); text-align: center; font-size: 0.9rem; }
+.agenda-foot a{ color: var(--color-gold-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
